@@ -12,7 +12,7 @@ Proxy server written in PHP containerised using Docker.
 - Pull latest image using
 > docker pull devagastya0/kuberpy
 - Run a container using
-> docker run -p 8080:80 -d kuberpy
+> docker run -p 8080:80 -d devagastya0/kuberpy
 
 This publishes the port 80 of your container to 8080 of your host. Ensure that there are no pre-existing processes on port 8080.
 
