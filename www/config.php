@@ -32,7 +32,6 @@ $config['plugins'] = array(
 	'UrlForm',
 	// site specific plugins below
 	'Youtube',
-	'DailyMotion',
 	'Twitter'
 );
 
