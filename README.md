@@ -12,7 +12,18 @@ Proxy server written in PHP containerised using Docker.
 - Pull latest image using
 > docker pull devagastya0/kuberpy
 - Run a container using
-> docker run -p 8080:80 -d devagastya0/kuberpy
+> docker run -p 8080:80 -d devagastya0/kuberpy:tag
+
+For now, we support Intel, ARM64 and ARM32 hardware. 
+
+| Tags supported     | 
+| ----------- |
+| arm32v7-latest      | 
+| latest   | 
+| arm64v8-latest   |
+
+
+For now, we support Intel, ARM64 and ARM32 hardware. 
 
 This publishes the port 80 of your container to 8080 of your host. Ensure that there are no pre-existing processes on port 8080.
 
