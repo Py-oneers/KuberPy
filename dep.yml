@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k3s-deploy
+  labels:
+    app: php-proxy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: php-proxy
+  template:
+    metadata:
+      labels:
+        app: php-proxy
+    spec:
+      containers:
+      - name: php-server
+        image: devagastya0/kuberpy:arm32v7-latest
+        ports:
+        - containerPort: 80
